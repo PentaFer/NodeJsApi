@@ -1,6 +1,7 @@
 import { pool } from '../db.js';
 
 
+
 export const getPersona = async (req, res) => {
     try {
       const [result] = await pool.query('SELECT * FROM persona');
